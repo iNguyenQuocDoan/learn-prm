@@ -103,6 +103,8 @@ void main() {
       "Vietnam"; // biến hằng, không thể thay đổi giá trị sau khi đã gán, có thể gán giá trị sau khi khai báo biến này nhưng chỉ được gán một lần
   print(COUNTRY);
 
+  // sử dụng typedef để khai báo biến có kiểu dữ liệu là List<String>
+
   // dùng const và final để khai báo hằng số, nhưng const phải gán giá trị tại thời điểm khai báo, còn final có thể gán giá trị sau khi khai báo nhưng chỉ được gán một lần
 
   // checkAge(18);
@@ -111,6 +113,15 @@ void main() {
   // sayGoodbye();
   // runForever();
 }
+
+typedef StringList =
+    List<
+      String
+    >; // định nghĩa kiểu dữ liệu mới, có thể sử dụng StringList để thay thế List<String>
+StringList names = ['doan', 'quoc', 'nguyen'];
+
+
+List<dynamic> numberList1 = [1, 2, 3];
 
 // khai báo biến trong dart
 // var: tự động xác định kiểu dữ liệu
